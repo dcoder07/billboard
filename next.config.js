@@ -16,7 +16,7 @@ const config = {
       },
       {
         protocol: 'https',
-        hostname: 'svofmwoukzjgqheplyds.supabase.co',
+        hostname: 'qyaaeqngyizdvrayaggg.supabase.co',
       },
       {
         protocol: 'https',
