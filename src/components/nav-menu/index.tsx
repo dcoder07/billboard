@@ -44,29 +44,25 @@ const NavMenu = () => {
                         height={64}
                       />
                       <div className='font-neutral-700 max-w-[200px] font-semibold'>
-                        Board of Technical Community, Gymkhana
+                        CampusHub
                       </div>
                     </Link>
-                    <p className='my-2 text-sm font-medium text-neutral-600'>
-                      The Technical Board of the Students&lsquo; Gymkhana, NIT
-                      Agartala. Founded by students, for students.
-                    </p>
                   </div>
                 </NavigationMenuLink>
               </li>
               <div className='flex flex-row justify-between'>
                 <ListItem
-                  href='https://instagram.in/btcnita'
+                  href='https://instagram.in'
                   title='Instagram'
                   Icon={FaInstagram}
                 />
                 <ListItem
-                  href='https://twitter.com/btcnita'
+                  href='https://twitter.com'
                   title='Twitter'
                   Icon={FaXTwitter}
                 />
                 <ListItem
-                  href='https://linkedin.com/btcnita'
+                  href='https://linkedin.com'
                   title='LinkedIn'
                   Icon={FaLinkedinIn}
                 />

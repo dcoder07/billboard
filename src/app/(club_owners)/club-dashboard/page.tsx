@@ -16,13 +16,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 const ClubDashboard = async () => {
-  const club = await currentUser().then(async (user) => {
-    if (user) {
-      return await getClubForOwner(user.id);
-    } else {
-      return null;
-    }
-  });
+  const user = await currentUser();
+  const club = user ? await getClubForOwner(user.id) : null;
 
   if (club) {
     return (
@@ -32,7 +27,7 @@ const ClubDashboard = async () => {
           description='Update your club details here.'
         >
           <Button asChild>
-            <Link href={`/clubs/${club.club_id}`} target='_blank'>
+            <Link href={`/clubs/${(club as any).club_id}`} target='_blank'>
               Go to Club Page
             </Link>
           </Button>

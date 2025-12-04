@@ -19,10 +19,9 @@ const Navbar = () => {
           height={46}
           className='h-10 w-10 rounded-full sm:h-12 sm:w-12'
         />
-        <div className='flex flex-col gap-0 font-bold'>
-          <span className='text-lg text-neutral-700 sm:text-xl'>Gymkhana</span>
-          <span className='text-xs uppercase text-neutral-500'>Technical</span>
-        </div>
+        <span className='flex flex-col gap-0 text-lg font-bold text-neutral-700 sm:text-xl'>
+          CampusHub
+        </span>
       </Link>
       <div className='hidden md:block'>
         <NavMenu />

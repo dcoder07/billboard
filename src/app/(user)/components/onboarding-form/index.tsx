@@ -145,8 +145,6 @@ const OnboardingForm = ({ email_id, user_id }: Props) => {
                 <SelectContent>
                   <SelectItem value='Male'>Male</SelectItem>
                   <SelectItem value='Female'>Female</SelectItem>
-                  <SelectItem value='Transgender'>Transgender</SelectItem>
-                  <SelectItem value='Non-binary'>Non-binary</SelectItem>
                   <SelectItem value='Prefer not to say'>
                     Prefer not to say
                   </SelectItem>
@@ -231,11 +229,11 @@ const OnboardingForm = ({ email_id, user_id }: Props) => {
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
-                    <SelectItem value='2024'>2024</SelectItem>
-                    <SelectItem value='2025'>2025</SelectItem>
                     <SelectItem value='2026'>2026</SelectItem>
                     <SelectItem value='2027'>2027</SelectItem>
                     <SelectItem value='2028'>2028</SelectItem>
+                    <SelectItem value='2028'>2029</SelectItem>
+                    <SelectItem value='2028'>2030</SelectItem>
                   </SelectContent>
                 </Select>
                 <FormMessage />
@@ -244,63 +242,7 @@ const OnboardingForm = ({ email_id, user_id }: Props) => {
           />
         </div>
         <div className='flex flex-col items-center gap-2 sm:flex-row'>
-          <FormField
-            control={form.control}
-            disabled={form.formState.isSubmitting}
-            name='tshirt_size'
-            render={({ field }) => (
-              <FormItem className='w-full'>
-                <FormLabel>T-Shirt Size</FormLabel>
-                <Select
-                  onValueChange={field.onChange}
-                  defaultValue={field.value}
-                >
-                  <FormControl>
-                    <SelectTrigger>
-                      <SelectValue placeholder='Select Tee size' />
-                    </SelectTrigger>
-                  </FormControl>
-                  <SelectContent>
-                    <SelectItem value='S'>Small (S)</SelectItem>
-                    <SelectItem value='M'>Medium (M)</SelectItem>
-                    <SelectItem value='L'>Large (L)</SelectItem>
-                    <SelectItem value='XL'>Extra Large (XL)</SelectItem>
-                    <SelectItem value='XXL'>
-                      Double Extra Large (XXL)
-                    </SelectItem>
-                  </SelectContent>
-                </Select>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            disabled={form.formState.isSubmitting}
-            name='dietary_preferences'
-            render={({ field }) => (
-              <FormItem className='w-full'>
-                <FormLabel>Dietary Preferences</FormLabel>
-                <Select
-                  onValueChange={field.onChange}
-                  defaultValue={field.value}
-                >
-                  <FormControl>
-                    <SelectTrigger>
-                      <SelectValue placeholder='Select' />
-                    </SelectTrigger>
-                  </FormControl>
-                  <SelectContent>
-                    <SelectItem value='Vegetarian'>Vegetarian</SelectItem>
-                    <SelectItem value='Non-vegetarian'>
-                      Non-Vegetarian
-                    </SelectItem>
-                  </SelectContent>
-                </Select>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+            
         </div>
         <div className='flex justify-start pt-5'>
           <Button type='submit' disabled={form.formState.isSubmitting}>

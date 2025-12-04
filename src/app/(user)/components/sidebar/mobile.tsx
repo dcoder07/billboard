@@ -49,18 +49,15 @@ const MobileNavbar = ({ items }: Props) => {
                     <Image
                       src={BTCLogo.src}
                       alt='BTC Logo'
-                      width={30}
-                      height={30}
-                      className='rounded-full'
+                      width={20}
+                      height={20}
+                      className='object-contain'
                     />
-                    <span className='xxs:block hidden text-lg font-semibold text-neutral-700'>
-                      Gymkhana Technical
+                    <span className='hidden text-lg font-semibold text-neutral-700 xxs:block'>
+                      CampusHub
                     </span>
                   </div>
-                  <SheetClose className='rounded-sm opacity-70 ring-offset-white transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-transparent focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-neutral-100 dark:ring-offset-neutral-950 dark:focus:ring-neutral-300 dark:data-[state=open]:bg-neutral-800'>
-                    <HiOutlineX className='text-xl' />
-                    <span className='sr-only'>Close</span>
-                  </SheetClose>
+                  
                 </SheetTitle>
               </SheetHeader>
               <div className='py-4'>

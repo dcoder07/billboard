@@ -50,10 +50,7 @@ const Sidebar = ({ items }: Props) => {
               className='rounded-full'
             />
             <div className='flex flex-col gap-0 font-bold'>
-              <span className='text-xl text-neutral-700'>Gymkhana</span>
-              <span className='text-xs uppercase text-neutral-500'>
-                Technical
-              </span>
+              <span className='text-xl text-neutral-700'>CampusHub</span>
             </div>
           </Link>
           <div className='py-3'>

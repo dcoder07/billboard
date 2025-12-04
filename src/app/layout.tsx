@@ -14,21 +14,15 @@ import { env } from '~/env';
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_OG_BASE_URL),
   title: {
-    template: '%s | Gymkhana Technical',
-    default: 'Gymkhana Technical',
+    template: '%s | CampusHub',
+    default: 'CampusHub',
   },
   description:
-    'Experience BTC Gymkhana Technical: Register for events, explore clubs, and dive into college life! Join the excitement today!',
+    'Register for events, explore clubs, and dive into college life! Join the excitement today!',
   applicationName: 'Gymkhana Technical',
-  keywords: [
-    'NIT Agartala',
-    'College Events',
-    'Gymkhana Technical',
-    'BTC',
-    'IIIT Agartala',
-  ],
+  keywords: ['NIT Agartala', 'IIIT Agartala', 'College Events'],
   creator: 'Vedant Chainani',
-  publisher: 'Gymkhana Technical',
+  publisher: 'CampusHub',
   icons: [
     { rel: 'icon', url: '/icon.png' },
     { rel: 'apple-touch-icon', url: '/apple-touch-icon.png' },
@@ -36,7 +30,7 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
   twitter: {
     card: 'summary_large_image',
-    title: 'Gymkhana Technical',
+    title: 'CampusHub',
     description:
       'Experience BTC Gymkhana Technical: Register for events, explore clubs, and dive into college life! Join the excitement today!',
     creator: '@Envoy_1084',
@@ -46,24 +40,24 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         type: 'image/png',
-        alt: `Gymkhana Technical`,
+        alt: `CampusHub`,
       },
     ],
   },
   openGraph: {
-    title: 'Gymkhana Technical',
+    title: 'CampusHub',
     description:
-      'Experience BTC Gymkhana Technical: Register for events, explore clubs, and dive into college life! Join the excitement today!',
+      'Register for events, explore clubs, and dive into college life! Join the excitement today!',
     type: 'website',
     locale: 'en_US',
-    url: 'https://btc.gymkhananita.com',
+    url: '',
     images: [
       {
         url: `/api/og`,
         width: 1200,
         height: 630,
         type: 'image/png',
-        alt: `Gymkhana Technical`,
+        alt: `CampusHub`,
       },
     ],
   },
@@ -71,7 +65,7 @@ export const metadata: Metadata = {
     'msapplication-tap-highlight': 'no',
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'default',
-    'apple-mobile-web-app-title': 'Gymkhana Technical',
+    'apple-mobile-web-app-title': 'CampusHub',
     'msapplication-TileColor': '#fff',
   },
 };
